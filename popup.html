@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDF Offset Navigator</title>
+  <style>
+    body { font-family: Arial, sans-serif; width: 250px; padding: 10px; }
+    input, button { width: 100%; margin: 5px 0; padding: 8px; }
+  </style>
+</head>
+<body>
+  <div id="no-offset">
+    <p>No offset for this PDF.</p>
+    <input type="number" id="indexPage" placeholder="Index page you entered" />
+    <input type="number" id="realPage" placeholder="Actual page you landed on" />
+    <button id="saveOffsetBtn">Save Offset & Go</button>
+  </div>
+
+  <div id="has-offset" style="display:none;">
+    <p>Enter target logical page:</p>
+    <input type="number" id="targetPage" placeholder="Page number" />
+    <button id="goBtn">Go</button>
+    <button id="resetBtn" style="margin-top:10px; background:#f66;">Reset Offset</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

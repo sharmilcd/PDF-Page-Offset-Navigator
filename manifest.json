@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "PDF Page Offset Navigator",
+  "version": "1.0",
+  "permissions": [
+    "storage",
+    "tabs",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "PDF Offset Navigator"
+  },
+  "host_permissions": [
+    "*://*/*.pdf*",
+    "file:///*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*.pdf*", "file:///*"],
+      "js": ["content.js"]
+    }
+  ]
+}
