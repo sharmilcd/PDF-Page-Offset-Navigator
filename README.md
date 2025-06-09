@@ -1,5 +1,4 @@
 # 📄 PDF Page Offset Navigator
----
 
 ## 🔍 Why use this?
 
